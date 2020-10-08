@@ -129,21 +129,21 @@ To enable HTTPS with certbot:
 
 1. Installed certbot:
 
-```bash
-sudo snap install core; sudo snap refresh core
-sudo apt-get remove certbot
-sudo snap install --classic certbot
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
+```terminal
+$ sudo snap install core; sudo snap refresh core
+$ sudo apt-get remove certbot
+$ sudo snap install --classic certbot
+$ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 
 2. Got the certificate and placed it in appropriate directory:
 
-```bash
-sudo certbot certonly
-sudo mkdir /etc/sftpgo/ssl/
-sudo cp /etc/letsencrypt/live/myftp.domain.name/cert.pem /etc/sftpgo/ssl/
-sudo cp /etc/letsencrypt/live/myftp.domain.name/privkey.pem /etc/sftpgo/ssl/
-sudo chown -R sftpgo:sftpgo /etc/sftpgo/ssl
+```terminal
+$ sudo certbot certonly
+$ sudo mkdir /etc/sftpgo/ssl/
+$ sudo cp /etc/letsencrypt/live/myftp.domain.name/cert.pem /etc/sftpgo/ssl/
+$ sudo cp /etc/letsencrypt/live/myftp.domain.name/privkey.pem /etc/sftpgo/ssl/
+$ sudo chown -R sftpgo:sftpgo /etc/sftpgo/ssl
 ```
 
 3. Updated the configuration:
