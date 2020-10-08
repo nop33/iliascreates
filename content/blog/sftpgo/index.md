@@ -1,5 +1,5 @@
 ---
-title: Applying Problem-Solving Steps for Setting Up an SFTP server
+title: Applying Problem-Solving Steps for Setting Up an SFTP Server
 date: "2020-10-08T16:06:00.000Z"
 description: "I need to set-up an SFTP server. How do I do it? Where do I start? What is available out there? This is how I did it. A detailed step-by-step guide on gathering requirements, listing and evaluating options, trying things out and documenting the final solution. Spoiler alert: I chose sftpgo."
 ---
