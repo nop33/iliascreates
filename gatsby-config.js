@@ -9,6 +9,8 @@ module.exports = {
     siteUrl: `https://iliascreates.netlify.app/`,
     social: {
       twitter: `eyettea`,
+      spotify: `11101912794`,
+      soundcloud: `imfetamin`,
     },
   },
   plugins: [
