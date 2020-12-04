@@ -1,5 +1,5 @@
 ---
-title: Integrating Vue.js with DFINITY SDK Bootstrap project
+title: "Integrating Vue.js with DFINITY SDK Bootstrap project: Part 1"
 date: "2020-11-30T21:08:00.000Z"
 description: "A step by step guide on integrating Vue.js with the bootstrap project of the DFINITY SDK."
 ---
@@ -149,3 +149,5 @@ dfx build dfinity_vue_assets && dfx canister install dfinity_vue_assets --mode u
 Life should be easy peasy lemon squeezy. Not stressed depressed lemon zest. Integrating Vue.js in this case is a good example of the former 😊
 
 You can find this project on GitHub: https://github.com/nop33/dfinity-vue
+
+Continue to learn how to integrate Vuetify in the [Part 2 blog post](/integrating-vuetify-dfinity-sdk).
