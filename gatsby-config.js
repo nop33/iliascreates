@@ -5,7 +5,7 @@ module.exports = {
       name: `Ilias Trichopoulos`,
       summary: `who lives in Zurich creating stuff.`,
     },
-    description: `A starter blog with stuff I've been working on.`,
+    description: `A starter blog with things I've been working on.`,
     siteUrl: `https://iliascreates.com/`,
     social: {
       twitter: `eyettea`,
