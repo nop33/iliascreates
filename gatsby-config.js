@@ -53,13 +53,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // Google Analytics plugin
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `UA-180152961-1`,
-    //   },
-    // },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
