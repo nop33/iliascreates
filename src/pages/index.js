@@ -5,19 +5,26 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
+const Homepage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={siteTitle} />
       <Bio />
-      <Link to="/blog/">Dev blog</Link>
+      <ul>
+        <li>
+          <Link to="/blog/">Dev blog</Link>
+        </li>
+        <li>
+          <Link to="/dj-sets/">DJ sets</Link>
+        </li>
+      </ul>
     </Layout>
   )
 }
 
-export default BlogIndex
+export default Homepage
 
 export const pageQuery = graphql`
   query {
