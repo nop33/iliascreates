@@ -6488,6 +6488,13 @@ gatsby-plugin-manifest@^2.4.33:
     semver "^7.3.2"
     sharp "^0.25.4"
 
+gatsby-plugin-monetization@^1.0.0-rc.6:
+  version "1.0.0-rc.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-monetization/-/gatsby-plugin-monetization-1.0.0-rc.6.tgz#54796789c4f572234a4088cf82debdd8874538a0"
+  integrity sha512-vFaPPpIc746XwDASyiYc3RSibNWPX+/wF++oeuh1DjEomc3B6qWKnQU3LDJ5mPr+c9cuKAcPhyidw0UfuLVHUQ==
+  dependencies:
+    react-monetize "^1.0.0-rc.5"
+
 gatsby-plugin-offline@^3.2.30:
   version "3.2.31"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.2.31.tgz#e92f7ffc6f290bdf6745a9eea6d21c071ff23343"
@@ -11885,6 +11892,11 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-monetize@^1.0.0-rc.5:
+  version "1.0.0-rc.7"
+  resolved "https://registry.yarnpkg.com/react-monetize/-/react-monetize-1.0.0-rc.7.tgz#f8d78dee37437261de7936c6195a6024c69399f1"
+  integrity sha512-tmDVRv43RnpnbQfF2xqKIYNV2dhviTqrodkIR3IKoxEiMFAw6M972tGieXHszZz9SqsTPpMn2S+jtizK6LoDJw==
 
 react-reconciler@^0.24.0:
   version "0.24.0"

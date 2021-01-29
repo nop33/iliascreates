@@ -84,5 +84,11 @@ module.exports = {
     //     shortname: `iliascreates`,
     //   },
     // },
+    {
+      resolve: `gatsby-plugin-monetization`,
+      options: {
+        paymentPointer: "$ilp.uphold.com/r7K9L4gUgwBB",
+      },
+    },
   ],
 }
