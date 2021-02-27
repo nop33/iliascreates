@@ -12,6 +12,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       {
         allMarkdownRemark(
+          filter: { fields: { contentType: { eq: "blog" } } }
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {
@@ -65,11 +66,17 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
+    const type = getNode(node.parent).sourceInstanceName
 
     createNodeField({
       name: `slug`,
       node,
       value,
+    })
+    createNodeField({
+      name: `contentType`,
+      node,
+      value: type,
     })
   }
 }
@@ -114,6 +121,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type Fields {
       slug: String
+      contentType: String
     }
   `)
 }
