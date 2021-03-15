@@ -3,7 +3,7 @@ const React = require("react")
 const PostBodyComponents = [
   <script
     dangerouslySetInnerHTML={{
-      __html: `if (window.location.host !== 'iliascreates.com') window.goatcounter = {no_onload: true}`,
+      __html: `if (window.location.host !== 'www.iliascreates.com') window.goatcounter = {no_onload: true}`,
     }}
   />,
   <script
