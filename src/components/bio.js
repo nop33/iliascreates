@@ -57,13 +57,18 @@ const Bio = () => {
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}You should{` `}
-          <a href={`https://open.spotify.com/user/${social?.spotify || ``}`}>
+          <a
+            href={`https://open.spotify.com/user/${
+              social?.spotify || ``
+            }/playlists`}
+          >
             follow his playlists on Spotify
           </a>
           {` `}and{` `}
           <a href={`https://soundcloud.com/${social?.soundcloud || ``}`}>
             his DJ sets on SoundCloud
-          </a>!
+          </a>
+          !
         </p>
       )}
     </div>
