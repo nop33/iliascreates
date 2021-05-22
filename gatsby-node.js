@@ -17,6 +17,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           limit: 1000
         ) {
           nodes {
+            id
             fields {
               slug
             }
@@ -52,6 +53,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         path: post.fields.slug,
         component: blogPost,
         context: {
+          id: post.id,
           slug: post.fields.slug,
           previous,
           next,
@@ -68,10 +70,20 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const value = createFilePath({ node, getNode })
     const type = getNode(node.parent).sourceInstanceName
 
+    let slugPrefix = ""
+
+    if (type !== "page") {
+      slugPrefix = `/${type}`
+    }
+
+    if (type === "blog") {
+      slugPrefix = `${slugPrefix}/post`
+    }
+
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value: `${slugPrefix}${value}`,
     })
     createNodeField({
       name: `contentType`,

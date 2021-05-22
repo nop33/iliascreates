@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Link } from "gatsby"
 
+import Intro from "../components/intro"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -11,15 +11,12 @@ const Homepage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={siteTitle} />
-      <Bio />
-      <ul>
-        <li>
-          <Link to="/blog/">Dev blog</Link>
-        </li>
-        <li>
-          <Link to="/dj-sets/">DJ sets</Link>
-        </li>
-      </ul>
+
+      <Intro>
+        Hello 👋 <br />
+        I'm Ilias and I like crafting digital stuff. <br />
+        Welcome to my lil' internet corner, enjoy your stay!
+      </Intro>
     </Layout>
   )
 }
