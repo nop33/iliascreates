@@ -1,0 +1,34 @@
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--fontFamily-sans);
+  margin-bottom: var(--spacing-16);
+
+  .navigation-menu-start,
+  .navigation-menu-end {
+    display: flex;
+
+    :first-child {
+      padding-left: 0;
+    }
+
+    :last-child {
+      padding-right: 0;
+    }
+  }
+
+  .navigation-menu-end {
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+  }
+
+  .navigation-menu-item {
+    padding: var(--spacing-4);
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
