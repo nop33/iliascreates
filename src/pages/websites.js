@@ -19,6 +19,26 @@ const Websites = ({ location }) => {
         website? Let's talk!
         <br />
         Drop me an <a href="mailto:websites@iliascreates.com">email</a>.
+        <p style={{ marginTop: "var(--spacing-12)" }}>
+          Here are some websites that I've brought to life:
+        </p>
+        <ul>
+          <li>
+            <a href="https://simoninstitute.ch/">simoninstitute.ch</a>
+          </li>
+          <li>
+            <a href="https://petro-logistics.com/">petro-logistics.com</a>
+          </li>
+          <li>
+            <a href="https://bity.com/">bity.com</a>
+          </li>
+          <li>
+            <a href="https://burgenstockresort.com/">burgenstockresort.com</a>
+          </li>
+          <li>
+            <a href="https://getindico.io/">getindico.io</a>
+          </li>
+        </ul>
       </Intro>
     </Layout>
   )
