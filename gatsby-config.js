@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Ilias Creates`,
+    title: `Ilias creates`,
     author: {
       name: `Ilias Trichopoulos`,
       summary: `who lives in Zurich creating stuff.`,
     },
-    description: `A starter blog with things I've been working on.`,
+    description: `My lil' internet corner`,
     siteUrl: `https://iliascreates.com/`,
     social: {
       twitter: `eyettea`,

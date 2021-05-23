@@ -10,7 +10,7 @@ const Homepage = ({ data, location }) => {
 
   return (
     <Layout location={location}>
-      <SEO title={siteTitle} />
+      <SEO title={siteTitle} description="I like crafting digital stuff." />
 
       <Intro>
         Hello{" "}

@@ -1,36 +1,20 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location}>
-        <SEO title="Fighting dev imposter syndrome" />
-        <blockquote>
-          Fighting the software engineer imposter syndrome, one blog post at a
-          time.
-        </blockquote>
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-        <Bio />
-      </Layout>
-    )
-  }
-
   return (
     <Layout location={location}>
-      <SEO title="Fighting dev imposter syndrome" />
+      <SEO
+        title="Fighting dev impostor syndrome | Ilias creates"
+        description="My dev blog with experiences I collect while working on cool stuff. My goal is to document pitfalls I encounter and help other devs fight their impostor syndrome."
+      />
       <blockquote>
-        Fighting the software engineer imposter syndrome, one blog post at a
+        Fighting the software engineer impostor syndrome, one blog post at a
         time.
       </blockquote>
       <ol style={{ listStyle: `none` }}>

@@ -7,7 +7,10 @@ import SEO from "../components/seo"
 const Websites = ({ location }) => {
   return (
     <Layout location={location}>
-      <SEO title="I build websites" />
+      <SEO
+        title="I build websites | Ilias creates"
+        description="I can build blazing fast websites to present your company, organization, project or yourself in no time."
+      />
       <Intro>
         Do you need a{" "}
         <span role="img" aria-label="fast">
@@ -15,7 +18,7 @@ const Websites = ({ location }) => {
         </span>{" "}
         website? Let's talk!
         <br />
-        Contact me at hi [at] iliascreates.com.
+        Drop me an <a href="mailto:websites@iliascreates.com">email</a>.
       </Intro>
     </Layout>
   )
