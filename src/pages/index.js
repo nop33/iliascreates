@@ -9,11 +9,15 @@ const Homepage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <SEO title={siteTitle} />
 
       <Intro>
-        Hello 👋 <br />
+        Hello{" "}
+        <span role="img" aria-label="hello">
+          👋
+        </span>
+        <br />
         I'm Ilias and I like crafting digital stuff. <br />
         Welcome to my lil' internet corner, enjoy your stay!
       </Intro>

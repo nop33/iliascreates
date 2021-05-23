@@ -6,12 +6,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout location={location}>
         <SEO title="Fighting dev imposter syndrome" />
         <blockquote>
           Fighting the software engineer imposter syndrome, one blog post at a
@@ -28,7 +27,7 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <SEO title="Fighting dev imposter syndrome" />
       <blockquote>
         Fighting the software engineer imposter syndrome, one blog post at a

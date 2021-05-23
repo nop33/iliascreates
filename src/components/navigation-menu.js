@@ -16,6 +16,9 @@ const NavigationMenu = ({ isHome }) => {
       </div>
       <ul className={styles.navigationMenuEnd}>
         <li className={styles.navigationMenuItem}>
+          <Link to="/websites/">Websites</Link>
+        </li>
+        <li className={styles.navigationMenuItem}>
           <Link to="/blog/">Dev blog</Link>
         </li>
       </ul>
