@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import Intro from "../components/intro"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -13,10 +14,13 @@ const BlogIndex = ({ data, location }) => {
         title="Fighting dev impostor syndrome | Ilias creates"
         description="My dev blog with experiences I collect while working on cool stuff. My goal is to document pitfalls I encounter and help other devs fight their impostor syndrome."
       />
-      <blockquote>
-        Fighting the software engineer impostor syndrome, one blog post at a
-        time.
-      </blockquote>
+      <Intro>
+        Fighting the dev impostor syndrome, one blog post at a time.{" "}
+        <span role="img" aria-label="fight">
+          🤺
+        </span>
+      </Intro>
+      <hr />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
