@@ -16,6 +16,9 @@ const NavigationMenu = ({ isHome }) => {
       </div>
       <ul className={styles.navigationMenuEnd}>
         <li className={styles.navigationMenuItem}>
+          <Link to="/music/">Music</Link>
+        </li>
+        <li className={styles.navigationMenuItem}>
           <Link to="/apps/">Apps</Link>
         </li>
         <li className={styles.navigationMenuItem}>
