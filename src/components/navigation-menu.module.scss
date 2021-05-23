@@ -26,6 +26,11 @@
   .navigation-menu-item {
     padding: var(--spacing-4);
     margin: 0;
+
+    @media (max-width: 26rem) {
+      padding: var(--spacing-2);
+      font-size: var(--fontSize-0);
+    }
   }
 
   a {
