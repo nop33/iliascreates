@@ -26,6 +26,7 @@ const Websites = ({ location }) => {
           <li>
             <a href="https://simoninstitute.ch/">simoninstitute.ch</a>
           </li>
+          <li>iliascreates.com</li>
           <li>
             <a href="https://www.conscioussapiens.com/">conscioussapiens.com</a>
           </li>
