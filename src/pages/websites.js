@@ -1,8 +1,11 @@
 import React from "react"
 
+import Boxes from "../components/boxes"
 import Intro from "../components/intro"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+import websitesData from "../../content/data/websites.yaml"
 
 const Websites = ({ location }) => {
   return (
@@ -22,27 +25,7 @@ const Websites = ({ location }) => {
         <p style={{ marginTop: "var(--spacing-12)" }}>
           Here are some websites that I've brought to life:
         </p>
-        <ul>
-          <li>
-            <a href="https://simoninstitute.ch/">simoninstitute.ch</a>
-          </li>
-          <li>iliascreates.com</li>
-          <li>
-            <a href="https://www.conscioussapiens.com/">conscioussapiens.com</a>
-          </li>
-          <li>
-            <a href="https://petro-logistics.com/">petro-logistics.com</a>
-          </li>
-          <li>
-            <a href="https://bity.com/">bity.com</a>
-          </li>
-          <li>
-            <a href="https://burgenstockresort.com/">burgenstockresort.com</a>
-          </li>
-          <li>
-            <a href="https://getindico.io/">getindico.io</a>
-          </li>
-        </ul>
+        <Boxes boxesData={websitesData} columns="2" />
       </Intro>
     </Layout>
   )
