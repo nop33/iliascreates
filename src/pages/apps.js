@@ -1,10 +1,13 @@
 import React from "react"
 
+import Boxes from "../components/boxes"
 import Intro from "../components/intro"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Websites = ({ location }) => {
+import appsData from "../../content/data/apps.yaml"
+
+const Apps = ({ location }) => {
   return (
     <Layout location={location}>
       <SEO
@@ -14,29 +17,12 @@ const Websites = ({ location }) => {
       <Intro>
         <p>
           These are some of the apps that I built in my free time to solve
-          personal problems.
+          personal challenges.
         </p>
-        <ul>
-          <li>
-            <a href="https://github.com/nop33/flatwise">
-              <span role="img" aria-label="house">
-                🏠
-              </span>{" "}
-              Flatwise
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/nop33/tracklists">
-              <span role="img" aria-label="music  ">
-                🎵
-              </span>{" "}
-              Tracklists
-            </a>
-          </li>
-        </ul>
+        <Boxes boxesData={appsData} />
       </Intro>
     </Layout>
   )
 }
 
-export default Websites
+export default Apps
