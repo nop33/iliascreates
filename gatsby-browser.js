@@ -7,4 +7,4 @@ import "./src/normalize.css"
 import "./src/style.scss"
 
 // Highlighting for code blocks
-import "prismjs/themes/prism-okaidia.css"
+import "prismjs/themes/prism.css"
