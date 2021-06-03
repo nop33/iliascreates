@@ -4,7 +4,7 @@ import styles from "./boxes.module.scss"
 
 const Boxes = ({ boxesData, columns }) => {
   return (
-    <ul className={`${styles.boxes} ${columns == 2 ? styles.twoColumns : ""}`}>
+    <ul className={`${styles.boxes} ${columns === 2 ? styles.twoColumns : ""}`}>
       {boxesData.map(boxData => {
         return (
           <li key={boxData.title}>
