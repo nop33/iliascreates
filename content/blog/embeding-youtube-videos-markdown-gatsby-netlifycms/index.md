@@ -4,7 +4,7 @@ date: "2021-06-03"
 description: "A step by step guide on supporting videos from hosting services like Youtube, Vimeo and VideoPress in a Gatsby blog and extending NetlifyCMS markdown widget for easy content editing"
 ---
 
-In one of the website I have build, I needed to be able to embed YouTube videos in the markdown content of the blog posts. I am using [Gatsby](https://www.gatsbyjs.com/) together with [NetlifyCMS](https://www.netlifycms.org/).
+In one of the websites I have built, I needed to be able to embed YouTube videos in the markdown content of the blog posts. I am using [Gatsby](https://www.gatsbyjs.com/) together with [NetlifyCMS](https://www.netlifycms.org/).
 
 Two are the things that I had to figure out:
 
