@@ -118,6 +118,12 @@ CMS.registerEditorComponent({
 })
 ```
 
+To explain what's going on above:
+
+- The `pattern` attribute defines the regular expression that will look for the line in the markdown content that starts with the string "`youtube: " and catch anything that comes after it, which in our case is the link to the video.
+- The `fromBlock` attribute defines a function that is responsible to initialize the value of the rendered widget. In other words, it takes the link of the video from the `pattern` and adds it in the input field of the YouTube widget.
+- The `toBlock` function defines the representation of the YouTube video in the markdown content. To comply with the `gatsby-remark-embed-video` Gatsby plugin, this needs to be a line that starts with a backtick, followed by the word "youtube: ", followed by the video link, and ends with another backtick.
+
 That's it! You can now go to your CMS page, click the "+" icon in the markdown editor, select "YouTube", paste your YouTube link and save your blog post.
 
 ![NetlifyCMS markdown widget](markdown-widget-youtube.jpg)
