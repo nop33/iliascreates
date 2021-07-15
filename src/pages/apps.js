@@ -3,14 +3,14 @@ import React from "react";
 import Boxes from "../components/boxes";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 import appsData from "../../content/data/apps.yaml";
 
 const Apps = ({ location }) => {
   return (
     <Layout location={location}>
-      <SEO
+      <Seo
         title="I build apps | Ilias creates"
         description="A list of apps that I have built."
       />

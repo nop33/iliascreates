@@ -2,12 +2,12 @@ import React from "react";
 
 import Intro from "../components/intro";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 const Music = ({ location }) => {
   return (
     <Layout location={location}>
-      <SEO
+      <Seo
         title="I play with music | Ilias creates"
         description="Music is a vital part of my life. I enjoy creating audiovisual experiences by curating and mixing electronic music."
       />

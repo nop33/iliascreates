@@ -3,14 +3,14 @@ import React from "react";
 import Boxes from "../components/boxes";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 import websitesData from "../../content/data/websites.yaml";
 
 const Websites = ({ location }) => {
   return (
     <Layout location={location}>
-      <SEO
+      <Seo
         title="I build websites | Ilias creates"
         description="I can build blazing fast websites to present your company, organization, project or yourself in no time."
       />

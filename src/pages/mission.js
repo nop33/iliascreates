@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import PageLayout from "../components/page-layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import Mission from "../components/mission";
 
 const BlogIndex = ({ data, location }) => {
@@ -16,7 +16,7 @@ const BlogIndex = ({ data, location }) => {
       title={pageData.title}
       siteTitle={siteTitle}
     >
-      <SEO
+      <Seo
         title={pageData.title || siteTitle}
         description={pageData.description}
       />

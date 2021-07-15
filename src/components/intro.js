@@ -1,9 +1,9 @@
 import React from "react";
 
-import styles from "./intro.module.scss";
+import { intro } from "./intro.module.scss";
 
 const Intro = ({ children }) => {
-  return <div className={styles.intro}>{children}</div>;
+  return <div className={intro}>{children}</div>;
 };
 
 export default Intro;

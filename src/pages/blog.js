@@ -3,14 +3,14 @@ import { Link, graphql } from "gatsby";
 
 import Intro from "../components/intro";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 const BlogIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes;
 
   return (
     <Layout location={location}>
-      <SEO
+      <Seo
         title="Fighting dev impostor syndrome | Ilias creates"
         description="My dev blog with experiences I collect while working on cool stuff. My goal is to document pitfalls I encounter and help other devs fight their impostor syndrome."
       />
