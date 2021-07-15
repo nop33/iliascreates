@@ -75,7 +75,11 @@ Now, when you build that app, you'll see that the `v-app` component was properly
 
 ```html
 <body>
-  <div data-app="true" class="v-application v-application--is-ltr theme--light" id="app">
+  <div
+    data-app="true"
+    class="v-application v-application--is-ltr theme--light"
+    id="app"
+  >
     <div class="v-application--wrap">
       <div>Hello, Ilias!</div>
     </div>
