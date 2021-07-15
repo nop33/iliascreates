@@ -12,7 +12,7 @@ If you are running [Ansible](https://www.ansible.com/) on [Alpine Linux](https:/
 
 The reason for this is that the `unzip` tool in Alpine does not have a `-T` option. To be able to use the `unarchive` Ansible module with Alpine Linux, you need to install `unzip`:
 
-```console
+```bash
 apk add unzip
 ```
 

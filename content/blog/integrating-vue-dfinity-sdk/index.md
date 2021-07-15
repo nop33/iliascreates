@@ -12,35 +12,36 @@ This tutorial demonstrates the integration of Vue.js with the [default project o
 
 Create a simple webpack project using the `dfx` tool:
 
-```sh
+```bash
 dfx new dfinity_vue
 cd dfinity_vue
 ```
 
 If you prefer using `yarn`, delete the `package-lock.json` file and run `yarn` to create a `yarn.lock` file.
 
-```sh
+```bash
 yarn && rm package-lock.json
 ```
 
 ## Integrating Vue
 
 ### Installing packages
+
 Since the DFINITY Canister Software Development Kit (SDK) already uses webpack, we have to install Vue from npm (instead of using the [`vue-cli` tool][3]). To do that, simply install the [`vue` package][1]:
 
-```sh
+```bash
 yarn add vue
 ```
 
 Install [`vue-loader`][2] so that webpack can load `.vue` files, unless you are not planning on using [Single File Components][5].
 
-```sh
+```bash
 yarn add --dev vue-loader
 ```
 
 When using `vue-loader` you will also need [`vue-template-compiler`][4] to avoid runtime-compilation overhead and CSP restrictions.
 
-```sh
+```bash
 yarn add --dev vue-template-compiler
 ```
 
@@ -95,13 +96,14 @@ The above component will call the `greet` method of the `dfinity_vue` canister p
 ## Deploying on the local Internet Computer network
 
 Start a local Internet Computer network:
-```sh
+
+```bash
 dfx start
 ```
 
 Register all canisters:
 
-```sh
+```bash
 dfx canister create --all
 ```
 
@@ -117,13 +119,13 @@ Note the id of the `dfinity_vue_assets` canister (in this case: `rrkah-fqaaa-aaa
 
 Build all canisters:
 
-```sh
+```bash
 dfx build
 ```
 
 Deploy all canisters on the local network:
 
-```sh
+```bash
 dfx canister install --all
 ```
 
@@ -133,7 +135,7 @@ Pass the `dfinity_vue_assets` canister id as an argument to https://localhost:80
 
 After you make changes to the frontend code, redeploy only the frontend canister with:
 
-```sh
+```bash
 dfx build dfinity_vue_assets && dfx canister install dfinity_vue_assets --mode upgrade
 ```
 
