@@ -1,12 +1,12 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
-import Intro from "../components/intro"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Intro from "../components/intro";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const Homepage = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const siteTitle = data.site.siteMetadata?.title || `Title`;
 
   return (
     <Layout location={location}>
@@ -22,10 +22,10 @@ const Homepage = ({ data, location }) => {
         Welcome to my lil' internet corner, enjoy your stay!
       </Intro>
     </Layout>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;
 
 export const pageQuery = graphql`
   query {
@@ -35,4 +35,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

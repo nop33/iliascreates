@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 
-import Boxes from "../components/boxes"
-import Intro from "../components/intro"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Boxes from "../components/boxes";
+import Intro from "../components/intro";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-import websitesData from "../../content/data/websites.yaml"
+import websitesData from "../../content/data/websites.yaml";
 
 const Websites = ({ location }) => {
   return (
@@ -28,7 +28,7 @@ const Websites = ({ location }) => {
         <Boxes boxesData={websitesData} columns="2" />
       </Intro>
     </Layout>
-  )
-}
+  );
+};
 
-export default Websites
+export default Websites;

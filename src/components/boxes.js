@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import styles from "./boxes.module.scss"
+import styles from "./boxes.module.scss";
 
 const Boxes = ({ boxesData, columns }) => {
   return (
@@ -9,15 +9,15 @@ const Boxes = ({ boxesData, columns }) => {
         parseInt(columns) === 2 ? styles.twoColumns : ""
       }`}
     >
-      {boxesData.map(boxData => {
+      {boxesData.map((boxData) => {
         return (
           <li key={boxData.title}>
             <a href={boxData.url}>{boxData.title}</a>
           </li>
-        )
+        );
       })}
     </ul>
-  )
-}
+  );
+};
 
-export default Boxes
+export default Boxes;

@@ -1,4 +1,4 @@
-const React = require("react")
+const React = require("react");
 
 const PostBodyComponents = [
   <script
@@ -11,8 +11,8 @@ const PostBodyComponents = [
     async
     src="//gc.zgo.at/count.js"
   ></script>,
-]
+];
 
 exports.onRenderBody = ({ setPostBodyComponents }) => {
-  setPostBodyComponents(PostBodyComponents)
-}
+  setPostBodyComponents(PostBodyComponents);
+};

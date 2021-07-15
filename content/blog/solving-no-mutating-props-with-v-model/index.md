@@ -37,7 +37,7 @@ and the (simplified) code looked like this:
 </template>
 
 <script>
-  import ItemForm from "@/components/ItemForm.vue"
+  import ItemForm from "@/components/ItemForm.vue";
 
   export default {
     components: {
@@ -51,17 +51,17 @@ and the (simplified) code looked like this:
           name: "",
           // ...
         },
-      }
+      };
     },
     created() {
-      this.flat = this.getFlat(this.flatId)
-      this.item.name = this.flat.name
+      this.flat = this.getFlat(this.flatId);
+      this.item.name = this.flat.name;
       // ...
     },
     methods: {
       // ...
     },
-  }
+  };
 </script>
 ```
 
@@ -77,7 +77,7 @@ and the (simplified) code looked like this:
 <script>
   export default {
     props: ["item"],
-  }
+  };
 </script>
 ```
 
