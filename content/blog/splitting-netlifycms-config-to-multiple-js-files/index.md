@@ -41,7 +41,6 @@ key_facts_section:
       icon: static/images/icons/earth.svg
 testimonials: ...
 ---
-
 ```
 
 **About page**
@@ -68,7 +67,6 @@ video_section:
   video: https://player.vimeo.com/video/845028457
 team_section: ...
 ---
-
 ```
 
 **Blog post**
