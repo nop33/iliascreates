@@ -1,5 +1,5 @@
 ---
-title: "Rules are not filters: Fixing Firebase \"Missing or insufficient permissions\" error"
+title: 'Rules are not filters: Fixing Firebase "Missing or insufficient permissions" error'
 date: "2020-10-15T13:47:00.000Z"
 description: "Pay attention that the queries you build are taking into account your security rules. Firebase will return an error in case you are querying for resources that the authenticated user has no access to."
 ---
@@ -43,8 +43,7 @@ Uncaught (in promise) FirebaseError: Missing or insufficient permissions.
 After quite a bit of digging into my code and the Firebase docs I found the problem. My code to fetch the items of a flat is the following:
 
 ```js
-firestore.collection('flats').doc(flat.id)
-         .collection('items').get()
+firestore.collection("flats").doc(flat.id).collection("items").get();
 ```
 
 My simple brain (I like to call him _Brian_) had this thought:
@@ -62,13 +61,16 @@ Oopsie!
 The problem was not in my rules. It was in my query. Adding a `where` clause to match the rule fixed the problem and I could now load the intented items:
 
 ```js
-firestore.collection('flats').doc(flat.id)
-         .collection('items')
-         .where('idsOfFlatmatesThatShareThis', 'array-contains', state.user.id)
-         .get()
+firestore
+  .collection("flats")
+  .doc(flat.id)
+  .collection("items")
+  .where("idsOfFlatmatesThatShareThis", "array-contains", state.user.id)
+  .get();
 ```
 
 ## What did I learn?
+
 To spend a bit more time reading the docs before diving into coding! Or at least skimming through all of them quickly ;)
 
 PS: I would totally recommend the video series of [Get to know Cloud Firestore](https://www.youtube.com/playlist?list=PLl-K7zZEsYLluG5MCVEzXAQ7ACZBCuZgZ) on Youtube.

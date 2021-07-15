@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
-import Intro from "../components/intro"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Intro from "../components/intro";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const Music = ({ location }) => {
   return (
@@ -24,7 +24,7 @@ const Music = ({ location }) => {
         .
       </Intro>
     </Layout>
-  )
-}
+  );
+};
 
-export default Music
+export default Music;

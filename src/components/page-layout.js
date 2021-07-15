@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
 const Layout = ({ location, title, siteTitle, children }) => {
   return (
@@ -12,7 +12,7 @@ const Layout = ({ location, title, siteTitle, children }) => {
       </header>
       <main>{children}</main>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

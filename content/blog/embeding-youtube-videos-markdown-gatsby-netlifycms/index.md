@@ -41,7 +41,7 @@ module.exports = {
       },
     },
   ],
-}
+};
 ```
 
 You can now add a YouTube video in your markdown file and Gatsby will know how to render it. Your markdown file should look something like this:
@@ -68,7 +68,7 @@ The question now is, where do I add the code to call this method? I am simply us
 ```js
 module.exports = {
   plugins: [`gatsby-plugin-netlify-cms`],
-}
+};
 ```
 
 Diving into the [documentation of the plugin](https://www.gatsbyjs.com/plugins/gatsby-plugin-netlify-cms/#options), I discovered the `modulePath` option which lets me specify a path to a file where I can import the `CMS` object. Sweet!
@@ -85,13 +85,13 @@ module.exports = {
       },
     },
   ],
-}
+};
 ```
 
 and create the `cms.js` file in the `/src` directory (feel free to place it wherever you want as long as you link it properly in the `gatsby-config.js` file):
 
 ```js
-import CMS from "netlify-cms-app"
+import CMS from "netlify-cms-app";
 
 CMS.registerEditorComponent({
   id: "youtube",
@@ -107,15 +107,15 @@ CMS.registerEditorComponent({
   fromBlock: function (match) {
     return {
       url: match[1],
-    }
+    };
   },
   toBlock: function (obj) {
-    return "`youtube: " + obj.url + "`"
+    return "`youtube: " + obj.url + "`";
   },
   toPreview: function (obj) {
-    return obj.url
+    return obj.url;
   },
-})
+});
 ```
 
 To explain what's going on above:

@@ -124,21 +124,21 @@ Here is where I import the NetlifyCMS library. This file will eventually be pars
 
 ```js
 // Import NetlifyCMS library
-import CMS from "netlify-cms"
-import "netlify-cms/dist/cms.css"
+import CMS from "netlify-cms";
+import "netlify-cms/dist/cms.css";
 
 // Import custom editor component from cms/editor-components.js
-import myCustomEditorComponent from "./editor-components"
+import myCustomEditorComponent from "./editor-components";
 // Import NetlifyCMS JS configuration object from cms/config/index.js
-import config from "./config"
+import config from "./config";
 
 // Disable loading of the configuration from the default config.yml file
-window.CMS_MANUAL_INIT = true
+window.CMS_MANUAL_INIT = true;
 // Initialize NetlifyCMS with the JS configuration objext
-window.CMS_CONFIGURATION = config
-CMS.init({ config })
+window.CMS_CONFIGURATION = config;
+CMS.init({ config });
 // Register the custom editor component
-CMS.registerEditorComponent(myCustomEditorComponent)
+CMS.registerEditorComponent(myCustomEditorComponent);
 ```
 
 ##### `cms/editor-components.js`
@@ -151,12 +151,12 @@ This is where we build our NetlifyCMS JS configuration object.
 
 ```js
 // Import the configuration of each collection from cms/config/collections
-import blogPostsCollection from "./collections/blog-posts"
-import pagesCollection from "./collections/pages"
-import pressReleasesCollection from "./collections/press-releases"
-import servicesCollection from "./collections/services"
-import siteConfigurationCollection from "./collections/site-configuration"
-import testimonialsCollection from "./collections/testimonials"
+import blogPostsCollection from "./collections/blog-posts";
+import pagesCollection from "./collections/pages";
+import pressReleasesCollection from "./collections/press-releases";
+import servicesCollection from "./collections/services";
+import siteConfigurationCollection from "./collections/site-configuration";
+import testimonialsCollection from "./collections/testimonials";
 
 // Build the Netlify JS configuration object
 const config = {
@@ -186,9 +186,9 @@ const config = {
     pressReleasesCollection,
     siteConfigurationCollection,
   ],
-}
+};
 
-export default config
+export default config;
 ```
 
 ##### `cms/config/collections/pagesCollection/index.js`
@@ -196,16 +196,16 @@ export default config
 This file groups together all the configuration objects from each individual page.
 
 ```js
-import { collectionDefaults } from "../../patterns"
-import homePageConfig from "./home"
-import aboutPageConfig from "./about"
+import { collectionDefaults } from "../../patterns";
+import homePageConfig from "./home";
+import aboutPageConfig from "./about";
 
 const pagesCollection = {
   ...collectionDefaults("Pages", "pages"),
   files: [homePageConfig, aboutPageConfig],
-}
+};
 
-export default pagesCollection
+export default pagesCollection;
 ```
 
 ##### `cms/config/collections/pagesCollection/home.js`
@@ -213,12 +213,12 @@ export default pagesCollection
 The configuration of a page. It utilizes fields and groups of fields (patterns) to keep the configuration code of the page DRY.
 
 ```js
-import { stringField, textField, objectField, listField } from "../../fields"
+import { stringField, textField, objectField, listField } from "../../fields";
 import {
   pageDefaults,
   buttonDefaults,
   titleWithSubtitleDefaults,
-} from "../../patterns"
+} from "../../patterns";
 
 export default {
   label: "Home page",
@@ -239,7 +239,7 @@ export default {
       ]),
     ]),
   ],
-}
+};
 ```
 
 ##### `cms/config/fields.js`
@@ -284,7 +284,7 @@ export const objectField = (
 Sometimes, patterns in the configuration of pages and collections emerge. This file groups fields together and exports these patterns.
 
 ```js
-import { stringField, textField, objectField, hiddenField } from "./fields"
+import { stringField, textField, objectField, hiddenField } from "./fields";
 
 export const collectionDefaults = (label, name) => ({
   label,
@@ -292,7 +292,7 @@ export const collectionDefaults = (label, name) => ({
   editor: {
     preview: false,
   },
-})
+});
 
 export const pageDefaults = [
   stringField("Menu title", "title", true),
@@ -301,25 +301,25 @@ export const pageDefaults = [
     stringField("SEO title", "title"),
     textField("SEO description", "description"),
   ]),
-]
+];
 
 export const multiColorTitleDefaults = objectField("Title", "title", [
   stringField("Text part 1", "text_part_1"),
   stringField("Text part 2", "text_part_2"),
-])
+]);
 
 export const buttonDefaults = (label = "Button", name = "button") =>
   objectField(label, name, [
     stringField("Text", "text", true),
     stringField("URL", "url", true),
-  ])
+  ]);
 
 export const titleWithSubtitleDefaults = (subtitleIsMarkdown = false) => [
   multiColorTitleDefaults,
   subtitleIsMarkdown
     ? markdownField("Subtitle", "subtitle")
     : textField("Subtitle", "subtitle"),
-]
+];
 ```
 
 ## Conclusion

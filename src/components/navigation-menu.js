@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 
-import styles from "./navigation-menu.module.scss"
+import styles from "./navigation-menu.module.scss";
 
 const NavigationMenu = ({ isHome }) => {
   return (
@@ -29,7 +29,7 @@ const NavigationMenu = ({ isHome }) => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default NavigationMenu
+export default NavigationMenu;

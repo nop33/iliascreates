@@ -1,14 +1,14 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
-import PageLayout from "../components/page-layout"
-import SEO from "../components/seo"
-import Mission from "../components/mission"
+import PageLayout from "../components/page-layout";
+import SEO from "../components/seo";
+import Mission from "../components/mission";
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title
-  const page = data.allMarkdownRemark.nodes[0]
-  const pageData = page.frontmatter
+  const siteTitle = data.site.siteMetadata?.title;
+  const page = data.allMarkdownRemark.nodes[0];
+  const pageData = page.frontmatter;
 
   return (
     <PageLayout
@@ -24,10 +24,10 @@ const BlogIndex = ({ data, location }) => {
         <div dangerouslySetInnerHTML={{ __html: page.html }}></div>
       </Mission>
     </PageLayout>
-  )
-}
+  );
+};
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -52,4 +52,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

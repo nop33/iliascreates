@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 
-import Boxes from "../components/boxes"
-import Intro from "../components/intro"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Boxes from "../components/boxes";
+import Intro from "../components/intro";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-import appsData from "../../content/data/apps.yaml"
+import appsData from "../../content/data/apps.yaml";
 
 const Apps = ({ location }) => {
   return (
@@ -22,7 +22,7 @@ const Apps = ({ location }) => {
         <Boxes boxesData={appsData} />
       </Intro>
     </Layout>
-  )
-}
+  );
+};
 
-export default Apps
+export default Apps;

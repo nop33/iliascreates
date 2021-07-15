@@ -56,12 +56,12 @@ If you miss this part, you'll receive this error message:
 Now that we have all the packages that we need we can update the `src/dfinity_vue_assets/public/index.js` file to use Vue. Replace the contents of the file with:
 
 ```js
-import Vue from "vue"
-import App from "./App.vue"
+import Vue from "vue";
+import App from "./App.vue";
 
 new Vue({
-  render: h => h(App),
-}).$mount("#app")
+  render: (h) => h(App),
+}).$mount("#app");
 ```
 
 and create the `src/dfinity_vue_assets/public/App.vue` component with the following contents:
