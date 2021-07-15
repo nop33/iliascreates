@@ -1,1 +1,1 @@
-# My personal dev blog
+My lil' corner on the internet :)
