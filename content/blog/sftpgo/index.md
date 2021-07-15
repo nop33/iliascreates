@@ -67,19 +67,19 @@ Alright, alright, time to install the shit somewhere. I created a machine on Exo
 
 I downloaded the `deb` package from [GitHub's Actions page](https://github.com/drakkan/sftpgo/actions/runs/289114329) and `rsync`'ed it to the server.
 
-```terminal
+```
 $ rsync -av ~/Downloads/sftpgo_1.0.1-1\~dev.77_amd64.deb ubuntu@myftp.domain.name:/home/ubuntu/sftpgo_1.0.1-1\~dev.77_amd64.deb
 ```
 
 Installed it with:
 
-```terminal
+```
 $ sudo apt install ./sftpgo_1.0.1-1~dev.77_amd64.deb
 ```
 
 Service is already running. Sweeeeet!
 
-```terminal
+```
 $ systemctl status sftpgo
 ● sftpgo.service - SFTPGo Server
      Loaded: loaded (/lib/systemd/system/sftpgo.service; enabled; vendor preset: enabled)
@@ -107,7 +107,7 @@ and opened port `8080` on the Exoscale interface.
 
 To protect the REST API and the Web Admin interface with a password I did the following:
 
-```terminal
+```
 $ sudo apt install apache2-utils
 $ sudo htpasswd -B -c /etc/sftpgo/httpauth sftpgoweb
 ```
@@ -129,7 +129,7 @@ To enable HTTPS with certbot:
 
 1. Installed certbot:
 
-```terminal
+```
 $ sudo snap install core; sudo snap refresh core
 $ sudo apt-get remove certbot
 $ sudo snap install --classic certbot
@@ -138,7 +138,7 @@ $ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
 2. Got the certificate and placed it in appropriate directory:
 
-```terminal
+```
 $ sudo certbot certonly
 $ sudo mkdir /etc/sftpgo/ssl/
 $ sudo cp /etc/letsencrypt/live/myftp.domain.name/cert.pem /etc/sftpgo/ssl/
@@ -159,7 +159,7 @@ $ sudo chown -R sftpgo:sftpgo /etc/sftpgo/ssl
 
 4. Restarted the server:
 
-```terminal
+```
 $ sudo systemctl restart sftpgo
 ```
 
@@ -197,7 +197,7 @@ To give the **vuser1** virtual user access to the `reports` folder, I logged in 
 
 To verify that everything worked, I logged in into the server with the **vuser1** account and I could only see a `vreports` folder with the content that the **staff** virtual user uploaded in `/var/lib/sftpgo/users/staff/reports`. Requirement 9: bye-bye.
 
-```terminal
+```
 $ sftp sftp://vuser1@myftp.domain.name:2022
 vuser1@myftp.domain.name's password:
 Connected to myftp.domain.name.

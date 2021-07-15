@@ -10,7 +10,7 @@ Let's extend the app we built in the [first tutorial](/integrating-vue-dfinity-s
 
 First of all, add the `vuetify` npm package to your project as a dependency (not a dev dependency, we actually need code of the package in our production app):
 
-```sh
+```bash
 yarn add vuetify
 ```
 
@@ -24,7 +24,7 @@ Finally, the `vue-style-loader` is a fork of `style-loader`. It would only be us
 
 So let's go ahead and install **only** the packages that are useful to us:
 
-```sh
+```bash
 yarn add --dev css-loader style-loader
 ```
 
@@ -134,7 +134,7 @@ Time to make use of the dev dependencies that we installed earlier, `css-loader`
 
 Rebuild and install your app:
 
-```sh
+```bash
 dfx build dfinity_vue_assets && dfx canister install dfinity_vue_assets --mode upgrade
 ```
 
