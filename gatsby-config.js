@@ -128,6 +128,5 @@ module.exports = {
         paymentPointer: "$ilp.uphold.com/r7K9L4gUgwBB",
       },
     },
-    `gatsby-plugin-sass`,
   ],
 };

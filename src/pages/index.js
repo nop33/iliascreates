@@ -3,14 +3,14 @@ import { graphql } from "gatsby";
 
 import Intro from "../components/intro";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 const Homepage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
 
   return (
     <Layout location={location}>
-      <SEO title={siteTitle} description="I like crafting digital stuff." />
+      <Seo title={siteTitle} description="I like crafting digital stuff." />
 
       <Intro>
         Hello{" "}

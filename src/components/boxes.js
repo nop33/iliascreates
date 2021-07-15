@@ -1,14 +1,10 @@
 import React from "react";
 
-import styles from "./boxes.module.scss";
+import { boxes, twoColumns } from "./boxes.module.scss";
 
 const Boxes = ({ boxesData, columns }) => {
   return (
-    <ul
-      className={`${styles.boxes} ${
-        parseInt(columns) === 2 ? styles.twoColumns : ""
-      }`}
-    >
+    <ul className={`${boxes} ${parseInt(columns) === 2 ? twoColumns : ""}`}>
       {boxesData.map((boxData) => {
         return (
           <li key={boxData.title}>

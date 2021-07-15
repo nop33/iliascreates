@@ -2,29 +2,34 @@ import React from "react";
 
 import { Link } from "gatsby";
 
-import styles from "./navigation-menu.module.scss";
+import {
+  navigationMenu,
+  navigationMenuStart,
+  navigationMenuItem,
+  navigationMenuEnd,
+} from "./navigation-menu.module.scss";
 
 const NavigationMenu = ({ isHome }) => {
   return (
-    <div className={styles.navigationMenu}>
-      <div className={styles.navigationMenuStart}>
+    <div className={navigationMenu}>
+      <div className={navigationMenuStart}>
         {!isHome && (
-          <Link to="/" className={styles.navigationMenuItem}>
+          <Link to="/" className={navigationMenuItem}>
             Home
           </Link>
         )}
       </div>
-      <ul className={styles.navigationMenuEnd}>
-        <li className={styles.navigationMenuItem}>
+      <ul className={navigationMenuEnd}>
+        <li className={navigationMenuItem}>
           <Link to="/music/">Music</Link>
         </li>
-        <li className={styles.navigationMenuItem}>
+        <li className={navigationMenuItem}>
           <Link to="/apps/">Apps</Link>
         </li>
-        <li className={styles.navigationMenuItem}>
+        <li className={navigationMenuItem}>
           <Link to="/websites/">Websites</Link>
         </li>
-        <li className={styles.navigationMenuItem}>
+        <li className={navigationMenuItem}>
           <Link to="/blog/">Dev blog</Link>
         </li>
       </ul>
