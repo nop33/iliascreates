@@ -32,6 +32,9 @@ const NavigationMenu = ({ isHome }) => {
         <li className={navigationMenuItem}>
           <Link to="/blog/">Dev blog</Link>
         </li>
+        <li className={navigationMenuItem}>
+          <a href="https://cv.iliascreates.com/">CV</a>
+        </li>
       </ul>
     </div>
   );
