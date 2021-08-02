@@ -151,5 +151,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-preload-fonts`,
+    {
+      resolve: `gatsby-plugin-cusdis`,
+      options: {
+        appId: `2c2f94d9-0f31-4304-b6e5-61bd1facadf9`,
+      },
+    },
   ],
 };
