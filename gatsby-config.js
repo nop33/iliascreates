@@ -43,13 +43,13 @@ module.exports = {
           {
             resolve: `gatsby-remark-embed-video`,
             options: {
-              width: 630,
+              width: 800,
             },
           },
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 800,
             },
           },
           {
