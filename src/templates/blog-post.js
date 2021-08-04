@@ -13,7 +13,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const cusdisAttrs = {
     pageId: post.id,
     pageUrl: `${data.site.siteMetadata.siteUrl}${location.pathname}`,
-    pageTitle: post.title,
+    pageTitle: post.frontmatter.title,
   };
 
   return (
