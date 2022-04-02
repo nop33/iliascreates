@@ -1,5 +1,5 @@
 // custom typefaces
-import "@fontsource/andada";
+import "@fontsource/andada-pro";
 // normalize CSS across browsers
 import "./src/normalize.css";
 // custom CSS styles
