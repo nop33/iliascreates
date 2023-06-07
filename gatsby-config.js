@@ -10,7 +10,6 @@ module.exports = {
     social: {
       twitter: `eyettea`,
       spotify: `11101912794`,
-      soundcloud: `imfetamin`,
     },
   },
   plugins: [

@@ -18,7 +18,7 @@ const Music = ({ location }) => {
           Spotify playlists
         </a>{" "}
         as well as sewing them together with my DJ controller to create{" "}
-        <a href="https://soundcloud.com/imfetamin/tracks">
+        <a href="https://www.fetam.in">
           hours-long musical experiences
         </a>
         .

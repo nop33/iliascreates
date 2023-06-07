@@ -63,7 +63,7 @@ const Bio = () => {
             follow his playlists on Spotify
           </a>
           {` `}and{` `}
-          <a href={`https://soundcloud.com/${social?.soundcloud || ``}`}>
+          <a href="https://www.fetam.in">
             his DJ sets on SoundCloud
           </a>
           !

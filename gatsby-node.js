@@ -117,7 +117,6 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Social {
       twitter: String
       spotify: String
-      soundcloud: String
     }
 
     type MarkdownRemark implements Node {
