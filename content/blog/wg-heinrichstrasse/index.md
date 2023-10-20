@@ -30,7 +30,7 @@ Ilias and Alex moved in during the summer of 2019. The flat was initially empty 
 
 ![about-us-1](image-3.png)
 
-Alex and Ilias met each other coincidentally while they were both being interviewed for the 2 available rooms in the WG we currently live in. We have a really chill vibe going on in the flat as well as with our neighbors and often plan dinners, outdoor activities, partying and hopefully soon traveling together. In blue (and not so blue) days we often drill into deep discussions about life, the universe and everything.
+Alex and Ilias met each other coincidentally while they were both being interviewed for the 2 available rooms in the WG we currently live in. We have a really chill vibe going on in the flat as well as with our neighbors and sometimes plan dinners, outdoor activities, partying and traveling together. In blue (and not so blue) days we often drill into deep discussions about _life, the universe and everything_.
 
 Let us just depict the life in a normal day in our flat and if you believe you would be a good fit, don't hesitate to contact us.
 
@@ -42,13 +42,15 @@ Whenever either of us leaves the flat, we like to leave our room door open. It m
 
 Every day either or both of us make sure our little jungle that we are very proud of is properly watered.
 
-At the end of the day you will find Alex working while listening to mellow electronic music encouraging him to finish his work day. Most probably you will find Ilias listening to some techno music and working on his laptop building his apps, reading a book or mixing electronic music on his newly bought DJ controller. We'll both cook (most of the time separately since Alex is intolerant of so many things) and enjoy the rest of the evening listening to music and working on our own things. Occasionally we might play a round of chess and drink some gin tonic together or grill.
+At the end of the day you will find Alex working while listening to mellow electronic music encouraging him to finish his work day. Most probably you will find Ilias listening to some techno music and working on his laptop building his apps, reading a book, or DJing. We'll both cook (most of the time separately since Alex is intolerant of so many things) and enjoy the rest of the evening listening to music and working on our own things. Occasionally we might play a round of chess and drink some gin tonic together or grill.
 
 During weekends when the weather is good Alex is always outside doing sports like mountain biking, wakeboarding or hiking in the summer and skiing in the winter. Ilias is definitely not as active as Alex, but also enjoys hikes, snowboarding and clubbing!
 
 ![about-us-2](image-2.png)
 
 Anika is working in the engineering industry and usually spends the workdays in the office. She enjoys sports or cozy evenings at home but is always down for a party!
+
+---
 
 Twice a month we book a cleaning service from Batmaid that takes care of the important things in the common areas. That of course doesn't mean that we don't clean common areas ourselves when needed ;)
 
