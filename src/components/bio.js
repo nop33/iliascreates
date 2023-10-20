@@ -26,7 +26,6 @@ const Bio = () => {
           social {
             twitter
             spotify
-            soundcloud
           }
         }
       }
@@ -55,18 +54,11 @@ const Bio = () => {
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}You should{` `}
-          <a
-            href={`https://open.spotify.com/user/${
-              social?.spotify || ``
-            }/playlists`}
-          >
+          <a href={`https://open.spotify.com/user/${social?.spotify || ``}/playlists`}>
             follow his playlists on Spotify
           </a>
           {` `}and{` `}
-          <a href="https://www.fetam.in">
-            his DJ sets on SoundCloud
-          </a>
-          !
+          <a href="https://www.fetam.in">his DJ sets on SoundCloud</a>!
         </p>
       )}
     </div>
