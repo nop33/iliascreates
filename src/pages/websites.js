@@ -21,10 +21,8 @@ const Websites = ({ location }) => {
         </span>{" "}
         website? Let's talk!
         <br />
-        Drop me an <a href="mailto:websites@iliascreates.com">email</a>.
-        <p style={{ marginTop: "var(--spacing-12)" }}>
-          Here are some websites that I've brought to life:
-        </p>
+        Drop me an <a href="mailto:hlias.nop+website@gmail.com">email</a>.
+        <p style={{ marginTop: "var(--spacing-12)" }}>Here are some websites that I've brought to life:</p>
         <Boxes boxesData={websitesData} columns="2" />
       </Intro>
     </Layout>
